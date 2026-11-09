@@ -1,4 +1,5 @@
 public class Main {
+/* 
     public static void main(String[] args) {
         int count = 0;
         helper(count);
@@ -7,5 +8,17 @@ public class Main {
     }
     public static void helper(int count) {
         count++;
+    }
+    To pass and change by reference, we would do that this way:
+*/
+    public static void main(String[] args) {
+        int count = 0;
+        count = helper(count);
+        System.out.print(count);
+        //the output is now 1 because the value of count is returned from the helper method and assigned to the variable count in the main method.
+    }
+    public static int helper(int count) {
+        count++;
+        return count;
     }
 }
