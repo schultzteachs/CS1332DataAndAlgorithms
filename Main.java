@@ -1,5 +1,17 @@
 public class Main {
-/* 
+
+public static void main(String[] args) {
+    Container<String> c1 = new Container<String>();
+
+    c1.set("Hello");
+    c1.set(c1.get() + " Bird World");
+    System.out.println(c1.get());
+    } }
+
+
+
+// Java is a pass by value language!!!
+    /* 
     public static void main(String[] args) {
         int count = 0;
         helper(count);
@@ -10,7 +22,7 @@ public class Main {
         count++;
     }
     To pass and change by reference, we would do that this way:
-*/
+
     public static void main(String[] args) {
         int count = 0;
         count = helper(count);
@@ -21,4 +33,5 @@ public class Main {
         count++;
         return count;
     }
-}
+        */
+
